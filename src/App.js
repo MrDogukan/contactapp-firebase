@@ -8,10 +8,10 @@ const initialValues = { username: "", phoneNumber: "", gender: "" };
 
 function App() {
   const [info, setInfo] = useState(initialValues);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(info);
-    AddUser();
+    AddUser(info);
   };
 
   return (
